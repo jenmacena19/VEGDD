@@ -1,0 +1,55 @@
+.container_page{
+  position: relative;
+  background-image: url('../../public/BackGround_MainPage0.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container_page::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0.7) 90%
+  );
+}
+.container_content{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.container_title{
+  color:  rgb(232, 229, 229);
+  margin: 3% auto; 
+  font-size: 40px;
+  font-family: "My";
+  height: 150px;
+  width: 70%;
+  border: 1px;
+  text-align: center;
+}
+.container_paragraph{
+  color: rgb(232, 229, 229) ;
+  width: 50%;
+  height: auto;
+  overflow-wrap: break-word;
+  text-align: center;
+  font-size: 18px;
+}
+@font-face {
+  font-family: "My";
+  src: url("../../public/HelpMe.ttf") format("truetype");
+}
+
+.button{
+  margin: 5%;
+}
