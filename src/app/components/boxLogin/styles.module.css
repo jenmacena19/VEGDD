@@ -1,7 +1,14 @@
 .container_box{
-    background-color: aliceblue;
+    /*background-color: aliceblue;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: auto;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 38vh; 
     width: auto;
+    background-color: pink;
 }
